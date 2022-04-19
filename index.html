@@ -1,51 +1,1074 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Chúc mừng 8/3</title>
-		<link rel="shortcut icon" href="./rose.png">
-		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
-		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script>document.documentElement.className = "js";
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sanji Inu</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favico.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.6.8/keen-slider.min.css"
+    />
+    <style>
+      @font-face {
+        font-family: 'GothamBlack';
+        src: url('/assets/fonts/Gotham-Black.otf');
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @layer components {
+        .title-section {
+          @apply text-4xl font-bold;
+        }
+        .tokenomic-card {
+          @apply flex-1 rounded-lg h-auto md:h-[420px] lg:h-[480px] bg-white relative p-3;
+        }
+        .tokenomic-card > img {
+          @apply absolute left-0;
+        }
+        .our-team-card {
+          width: calc(20% - 50px);
+        }
+        .btn-hover {
+          @apply relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-full after:bg-[#F6DB2A] after:ease-in after:duration-200 after:-z-10 hover:after:w-full;
+        }
+        .icon-hover {
+          @apply hover:text-[#F6DB2A] hover:border-[#F6DB2A];
+        }
+        .header-sticky {
+          @apply sticky top-0 bg-[#1b1b1b] shadow-xl;
+        }
+        .nav-item {
+          @apply px-3 py-2 rounded-md cursor-pointer hover:bg-white/10;
+        }
+        section {
+          @apply mb-32;
+        }
+        @media screen and (max-width: 768px) {
+          .our-team-card {
+            width: calc(20% - 10px);
+          }
+        }
+      }
+    </style>
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
 
-var supportsCssVars = function supportsCssVars() {
-  var e,
-      t = document.createElement("style");
-  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-};
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+        color: #f6db2a;
+      }
+      .active + .content {
+        padding: 24px 18px;
+      }
 
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-1 loading">
-		<main>
-			<div class="message">Please view this demo on a desktop to see the effect.</div>
-			<div class="frame">
-			</div>
-			<div class="content">
-				<div class="grid">
-					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
-					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
-				</div>
-                <h2 class="content__title no-select">
-					<span>Love</span>
-				</h2>
-				<h2 class="content__title no-select">
-					<span class="content__title-sub">Chúc sir 8/3 xinh đẹp như ảnh trên mạng</span>
-				</h2>
-			</div>
-		</main>
-        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
-		</svg>
-		<script src="./script.js"></script>
-	</body>
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: '\2212';
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #1b1b1b;
+      }
+      .content a {
+        color: #145aa8;
+      }
+
+      /* Test */
+      [class^='number-slide'],
+      [class*=' number-slide'] {
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        color: #fff;
+        font-weight: 500;
+        /* height: 300px; */
+        /* max-height: 100vh; */
+      }
+      .keen-slider__slide {
+        min-width: 272px;
+        height: auto;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: '#bdbd22',
+            },
+            backgroundImage: {
+              'footer-banner': "url('/assets/images/footer-banner.jpg')",
+            },
+            fontFamily: {
+              gothamBlack: ['GothamBlack', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-[#1b1b1b] text-white font-gothamBlack overflow-hidden"
+  >
+    <div
+      id="preload-section"
+      class="h-screen w-full bg-[#1b1b1b] z-50 flex items-center justify-center"
+    >
+      <img
+        class="w-36 animate__animated animate__flip animate__infinite preloader"
+        src="/assets/images/favico.png"
+        alt="Preloader"
+      />
+    </div>
+
+    <header id="header" class="header-area z-10">
+      <div class="navbar-area">
+        <div class="container max-w-screen-xl relative mx-auto px-4 py-4">
+          <div class="w-full">
+            <nav
+              class="flex items-center navbar navbar-expand-lg justify-between"
+            >
+              <a class="mr-4" href="index.html">
+                <img
+                  class="w-auto h-20"
+                  src="assets/images/logo.png"
+                  alt="Logo"
+                />
+              </a>
+              <button
+                class="block navbar-toggler focus:outline-none lg:hidden"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarOne"
+                aria-controls="navbarOne"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleMenu()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="absolute hidden top-[112px] -right-[100vw] z-20 w-full px-5 py-3 duration-300 bg-white shadow lg:w-auto collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none"
+                id="navbarOne"
+              >
+                <ul
+                  id="nav"
+                  class="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex text-primaryColor space-x-0 ld:space-x-8"
+                >
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#tokenomics">Tokenomics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#roadmap">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#partner">Partner</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="page-scroll"
+                      target="_blank"
+                      href="/assets/Whitepaper-Sanji-inu.pdf"
+                      >Whitepaper</a
+                    >
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="page-scroll" href="#howToBuy">How to buy</a>
+                  </li> -->
+                </ul>
+              </div>
+
+              <div
+                class="absolute right-0 hidden mt-2 mr-24 navbar-btn sm:inline-block lg:mt-0 lg:static lg:mr-0"
+              >
+                <a
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xA9F059F63cd432B65A723EEeFf69304FD780070c"
+                  class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 btn-hover"
+                  >BUY SANJI</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <section
+        class="container mx-auto px-4 max-w-screen-xl flex items-center flex-col md:flex-row"
+        id="home"
+      >
+        <div
+          class="flex flex-1 flex-col text-center animate__animated animate__fadeInUp"
+        >
+          <img
+            class="object-contain"
+            src="assets/images/onepiece.png"
+            alt="onepiece"
+          />
+          <div class="text-5xl md:text-8xl font-bold">SANJI INU</div>
+          <div>
+            Sanji Inu is a community meme token, ownership will be removed. The
+            project will be developed in the direction of NFT and adventure game
+            to give One Piece fans an experience of the journey across the
+            ocean.
+          </div>
+        </div>
+        <div class="flex flex-1">
+          <img
+            class="object-contain animate__animated animate__fadeInTopLeft"
+            src="assets/images/sanji-inu.png"
+            alt="sanji inu"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="container mx-auto px-4 max-w-screen-xl">
+        <div class="text-center w-full title-section mb-6">Who are Sanji?</div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="flex flex-col basis-1/3">
+            <div class="text-3xl font-bold mb-2">Vinsmoke Sanji</div>
+            <div>
+              "Blackfoot" Sanji, born Vinsmoke Sanji, is the chef of the Straw
+              Hat Pirates. He is the fifth member of the crew and the fourth to
+              join the Straw Hat Pirates.
+              <br />
+              His dream is to find the rumored chef's paradise, All Blue, which
+              is where East Blue, West Blue, North Blue, and South Blue meet,
+              along with their wildlife. He is one of the top three fighters of
+              the Straw Hats, alongside Luffy and Zoro.
+            </div>
+            <div class="flex mt-5 gap-4">
+              <a
+                href="https://t.me/sanjiinucommunity"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center w-full btn-hover"
+                >Join Telegram</a
+              >
+              <a
+                href="https://sweepwidget.com/view/54539-bhx432fv"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center w-full btn-hover"
+                >Join Whitelist
+              </a>
+            </div>
+          </div>
+          <div class="basis-2/3">
+            <!-- <iframe
+              class="w-full aspect-video rounded-xl"
+                width="640"
+              height="480"
+              src="https://www.youtube.com/embed/VFo0vmA8A1U"
+            ></iframe> -->
+            <iframe
+              src="https://drive.google.com/file/d/1buXOOAx16ZXsoKwkHtLolwDdtLhrUwe9/preview"
+              width="100%"
+              height="480"
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="squad">
+        <div class="container mx-auto px-4 max-w-screen-xl">
+          <div class="flex gap-4 mb-10">
+            <div class="flex-1">
+              <div class="title-section mb-4">
+                WELCOME <br />
+                TO THE SANJI-INU
+              </div>
+              <div class="flex">
+                Sanji-Inu (SANJI) is a collection of 666 Sanji NFT fans that
+                includes variations on outfits and accessories.
+              </div>
+            </div>
+            <div class="w-1/3">
+              <img class="w-full" src="/assets/images/squad/(1).png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="my-keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(1).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(2).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(3).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(4).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(5).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(6).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(7).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(8).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(9).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(10).png" alt="" />
+          </div>
+        </div>
+        <br />
+        <div id="my-keen-slider2" class="keen-slider">
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(11).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(12).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(13).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(14).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(15).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(16).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(17).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(18).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(19).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(20).png" alt="" />
+          </div>
+          <div class="keen-slider__slide">
+            <img src="/assets/images/squad/(21).png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="container mx-auto px-4 max-w-screen-xl">
+        <div class="text-center mb-80 animate__animated animate__fadeOut">
+          <div class="w-full title-section mb-6">TOKENOMICS</div>
+          <div class="text-2xl w-full md:w-1/2 mx-auto mb-20">
+            $SANJI is built in a sustainable way to benefit both holders and
+            project sustainability.
+          </div>
+          <!-- <div class="text-6xl md:text-8xl font-bold mb-6">
+            <span class="text-[#d82407]">12%</span> TAX
+          </div> -->
+          <div class="flex items-center gap-4 mb-5">
+            <div class="flex-1 flex flex-col justify-center items-center gap-4">
+              <img src="assets/images/Unicrypt.png" alt="" />
+            </div>
+            <div class="flex-1 flex flex-col gap-4 items-center">
+              <a
+                href="https://poocoin.app/tokens/0xa9f059f63cd432b65a723eeeff69304fd780070c"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
+                >View Chart</a
+              >
+              <a
+                href="https://pancakeswap.finance/swap?outputCurrency=0xA9F059F63cd432B65A723EEeFf69304FD780070c"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-8 btn-hover w-52"
+                >Buy Sanji Inu</a
+              >
+            </div>
+          </div>
+          <div class="flex mb-20">
+            <div class="flex-1">
+              <div class="mb-4">Audited by Coinscope</div>
+
+              <a
+                href="https://github.com/coinscope-co/audits/blob/main/sanji/audit.pdf"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 md:px-8 btn-hover w-auto md:w-52"
+                >View Audit</a
+              >
+            </div>
+            <div class="flex-1">
+              <div class="mb-4">Team is KYC verified by Coinscope</div>
+              <a
+                href="https://github.com/coinscope-co/audits/blob/main/sanji/audit.pdf"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 md:px-8 btn-hover w-auto md:w-52"
+                >View KYC</a
+              >
+            </div>
+            <div class="flex-1">
+              <div class="mb-4">Contract created by the Sanji Inu</div>
+              <a
+                href="https://bscscan.com/address/0xa9f059f63cd432b65a723eeeff69304fd780070c#code"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md text-center px-2 md:px-8 btn-hover w-auto md:w-52"
+                >View Contract</a
+              >
+            </div>
+          </div>
+          <div class="text-4xl md:text-6xl font-bold">
+            <span class="text-[#eb8a08]">6%</span> BUY |
+            <span class="text-[#d75d0a]">6%</span> SELL
+          </div>
+        </div>
+        <div class="flex gap-48 md:gap-4 flex-col md:flex-row">
+          <div
+            class="tokenomic-card bg-[#EB8A08] animate__animated animate__fadeOut"
+          >
+            <img class="img-token" src="assets/images/tokenomic-1.png" alt="" />
+            <div class="text-justify text-2xl">
+              The remaining 2% will be divided equally among the holders, which
+              creates a passive profit for long-term investors.
+            </div>
+          </div>
+          <div
+            class="tokenomic-card bg-[#D75D0A] animate__animated animate__fadeOut md:-mt-20"
+          >
+            <img class="img-token" src="assets/images/tokenomic-2.png" alt="" />
+            <div class="text-justify text-2xl">
+              Liquidity will be locked, the developer team will only hold 2% to
+              use for project marketing and the community will be the one to
+              decide the project
+            </div>
+          </div>
+          <div
+            class="tokenomic-card bg-[#D82407] animate__animated animate__fadeOut"
+          >
+            <img class="img-token" src="assets/images/tokenomic-3.png" alt="" />
+            <div class="text-justify text-2xl">
+              2% FOR CHARITY ACTIVITIES FOR POOR CHILDREN AND PROMOTE THE
+              PROJECT TO MORE USERS IN THE FUTURE
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 max-w-screen-xl">
+        <div class="w-full title-section text-center mb-4">TRANSPARENCY</div>
+        <div class="flex items-center mb-4">
+          <div class="basis-2/5 flex justify-center">
+            <img
+              class="object-contain w-full md:w-4/5 animate__animated animate__fadeOut"
+              src="assets/images/transparency-1.png"
+              alt="onepiece"
+            />
+          </div>
+          <div class="basis-3/5 pl-4 animate__fadeIn">
+            <div class="font-bold">A CONNECTED DEV TEAM</div>
+            Our team have a strong set of skills and many have worked for large
+            financial companies specialising in marketing. extension and create
+            a wallet. Then proceed to fund your wallet with BNB. Make sure you
+            have enough for gas fees.
+          </div>
+        </div>
+        <div class="flex items-center mb-4">
+          <div class="basis-3/5 pr-4">
+            <div class="font-bold">ANTI-FUD CHAT</div>
+            Our team have a strong set of skills and many have worked for large
+            financial companies specialising in marketing. extension and create
+            a wallet. Then proceed to fund your wallet with BNB. Make sure you
+            have enough for gas fees.
+          </div>
+          <div class="basis-2/5 flex justify-center">
+            <img
+              class="object-contain w-full md:w-4/5 animate__animated animate__fadeOut"
+              src="assets/images/transparency-2.png"
+              alt="onepiece"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center mb-4">
+          <div class="basis-2/5">
+            <img
+              class="object-contain w-full md:w-4/5 animate__animated animate__fadeOut"
+              src="assets/images/transparency-3.jpg"
+              alt="onepiece"
+            />
+          </div>
+          <div class="basis-3/5 pl-4">
+            <div class="font-bold">SUPPLY & LIQUIDITY</div>
+            Our team have a strong set of skills and many have worked for large
+            financial companies specialising in marketing. extension and create
+            a wallet. Then proceed to fund your wallet with BNB. Make sure you
+            have enough for gas fees.
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="w-full title-section text-center mb-6">KYC & AUDIT</div>
+        <div class="flex items-center">
+          <div class="basis-2/3 flex justify-center">
+            <img
+              class="object-contain"
+              src="assets/images/solidproof.png"
+              alt="onepiece"
+            />
+          </div>
+          <div class="basis-1/3">
+            <div class="flex flex-col gap-5 justify-center items-center">
+              <a
+                href="#"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md w-[140px] text-center btn-hover"
+                >View KYC</a
+              >
+              <a
+                href="#"
+                class="border-2 border-[#F6DB2A] p-2 rounded-md w-[140px] text-center btn-hover"
+                >View Audit</a
+              >
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="roadmap" class="container mx-auto px-4 max-w-screen-xl">
+        <div class="w-full title-section text-center mb-4">ROADMAP</div>
+        <div class="flex gap-2 md:items-center flex-col md:flex-row">
+          <div class="flex-1">
+            <img
+              class="object-contain animate__animated animate__fadeOut"
+              src="assets/images/stage-1.png"
+              alt="onepiece"
+            />
+          </div>
+          <div class="flex-1 -order-1 md:order-1">
+            <div class="text-3xl font-bold mb-4">STAGE 1</div>
+            <ul class="flex flex-col gap-2">
+              <li>- Attracting more than 1,000 holders</li>
+              <li>- White Paper 1.0 Release</li>
+              <li>- 2,000 Telegram members</li>
+              <li>- Coinecko listing</li>
+              <li>- Coinmarketcap listing</li>
+              <li>- Contract Audit</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex gap-2 md:items-center flex-col md:flex-row">
+          <div class="flex-1">
+            <div class="text-3xl font-bold mb-4">STAGE 2</div>
+            <ul class="flex flex-col gap-2">
+              <li>- 10,000 holders</li>
+              <li>
+                - Marketing campaign (Socials: Youtube, Twitter, Facebook,
+                Instagram, Tiktok)
+              </li>
+              <li>- Attract 20,000 Telegram followers</li>
+              <li>- Marketplace website integration</li>
+              <li>- Market Cap Stable Above 50 million</li>
+              <li>- First Vote to Donate to Charities</li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <img
+              class="object-contain animate__animated animate__fadeOut"
+              src="assets/images/stage-2.png"
+              alt="onepiece"
+            />
+          </div>
+        </div>
+        <div class="flex gap-2 md:items-center flex-col md:flex-row">
+          <div class="flex-1">
+            <img
+              class="object-contain animate__animated animate__fadeOut"
+              src="assets/images/stage-3.png"
+              alt="onepiece"
+            />
+          </div>
+          <div class="flex-1 -order-1 md:order-1">
+            <div class="text-3xl font-bold mb-4">STAGE 3</div>
+            <ul class="flex flex-col gap-2">
+              <li>- 40,000 holders</li>
+              <li>- Listed Sanji token on small and medium exchanges</li>
+              <li>- New partnership</li>
+              <li>- Preparing to list on major exchanges</li>
+              <li>- Big Marketing Push (i.e BTOK Ads)</li>
+              <li>- Update ON Trustwallet</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex gap-2 md:items-center flex-col md:flex-row">
+          <div class="flex-1">
+            <div class="text-3xl font-bold mb-4">STAGE 4</div>
+            <ul class="flex flex-col gap-2">
+              <li>- Interview on TV and Radio</li>
+              <li>- Create NFT</li>
+              <li>- Big Marketing Push (i.e BTOK Ads)</li>
+              <li>- Update ON Trustwallet</li>
+              <li>- Android/iOs wallet with built-on marketplace</li>
+              <li>- Update Moonmap new version</li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <img
+              class="object-contain animate__animated animate__fadeOut"
+              src="assets/images/stage-4.png"
+              alt="onepiece"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="pb-10 container mx-auto px-4 max-w-screen-xl">
+        <div class="w-full title-section text-center mb-6">OUR TEAM</div>
+        <div class="flex justify-between items-start">
+          <div class="our-team-card">
+            <div class="flex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Team-1.png" alt="our team" />
+              <div
+                class="flex justify-between flex-col items-center text-center md:-mt-8"
+              >
+                <div class="font-bold">Amity</div>
+                <div class="mt-4">CEO & Founder</div>
+              </div>
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Team-2.png" alt="our team" />
+              <div
+                class="flex justify-between flex-col items-center text-center md:-mt-8"
+              >
+                <div class="font-bold">Edna</div>
+                <div class="mt-4">Co-Founder</div>
+              </div>
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Team-3.png" alt="our team" />
+              <div
+                class="flex justify-between flex-col items-center text-center md:-mt-8"
+              >
+                <div class="font-bold">Farah</div>
+                <div class="mt-4">Community Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Team-4.png" alt="our team" />
+              <div
+                class="flex justify-between flex-col items-center text-center md:-mt-8"
+              >
+                <div class="font-bold">Winifred</div>
+                <div class="mt-4">Social Media Manager</div>
+              </div>
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Team-5.png" alt="our team" />
+              <div
+                class="flex justify-between flex-col items-center text-center md:-mt-8"
+              >
+                <div class="font-bold">Sophie</div>
+                <div class="mt-4">Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="partner"
+        class="pb-10 container mx-auto px-4 max-w-screen-xl"
+      >
+        <div class="w-full title-section text-center mb-6">PARTNER</div>
+        <div class="flex justify-between items-start">
+          <div class="our-team-card">
+            <div class="flex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/Unicrypt.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/CGK1.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/CMC1.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/BSC.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/solidproof.png" alt="our team" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-start mt-5">
+          <div class="our-team-card">
+            <div class="flex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/partner-bitmart.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/partner-coinscope.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/partner-kucon.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/partner-lbank.png" alt="our team" />
+            </div>
+          </div>
+          <div class="our-team-card">
+            <div class="lex flex-col animate__animated animate__fadeOut">
+              <img src="assets/images/partner-mexc.png" alt="our team" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how to buy -->
+      <section class="container mx-auto px-4 max-w-screen-xl">
+        <div class="w-full title-section text-center mb-6">HOW TO BUY?</div>
+        <div class="flex gap-5 flex-col md:flex-row">
+          <div class="flex-1">
+            <button class="collapsible">
+              Step 1: Download Metamask or Trust Wallet
+            </button>
+            <div class="content">
+              <p>
+                You can download the Metamask app&nbsp;<a
+                  href="https://metamask.io/download.html"
+                  >here&nbsp;</a
+                >or Trust Wallet app&nbsp;<a
+                  href="https://trustwallet.com/download-page"
+                  >here</a
+                >. You can also use Metamask on desktop but you need to use
+                Google Chrome and download this&nbsp;<a
+                  href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+                  >extension</a
+                >.
+              </p>
+            </div>
+            <button class="collapsible">
+              Step 2: Connect wallet to Binance Smart Chain
+            </button>
+            <div class="content">
+              <p>
+                Cryptocurrencies and tokens are often on different networks
+                known as blockchains.&nbsp;<br />&zwj;<br />Since the Sanji Inu
+                token is on Binance Smart Chain you will need to connect your
+                wallet to the Smart Chain if it isn’t already.&nbsp;<br />&zwj;<br />It
+                is pretty quick and easy, anyone can do it following some simple
+                instructions.<br />&zwj;<br /><a
+                  href="https://docs.binance.org/smart-chain/wallet/trustwallet.html"
+                  >Connect Trust Wallet to Smart Chain</a
+                ><br /><a
+                  href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"
+                  >Connect Metamask to Smart Chain</a
+                >
+              </p>
+            </div>
+            <button class="collapsible">Step 3: Get BNB</button>
+            <div class="content">
+              <p>
+                Before you can actually buy any token on the Smart Chain you
+                must first send some BNB to your wallet. You can send BNB from
+                another wallet including exchange wallets like Binance. It is
+                recommended that you have a Binance account if you don’t already
+                as it can come in handy for things like this.&nbsp;<br /><a
+                  href="https://www.binance.com/en"
+                  >Binance website&nbsp;</a
+                >–&nbsp;<a href="https://www.binance.com/en/download"
+                  >Binance App<br />&zwj;</a
+                ><br />BNB is needed because every transaction on Smart Chain
+                uses BNB to pay a very small gas fee. You will see the gas fee
+                details when you confirm the transaction in your wallet.<br /><br />You
+                do not need to pay gas fees when buying a token from a
+                centralized exchange like Binance, you only do on a
+                Decentralized exchange (DEX) like Pancake Swap. Remember you can
+                actually swap any Bep20 token for another. So you can swap Sanji
+                Inu into any other Bep20 token on Pancake Swap at any time.<br /><br />Just
+                remember you always need a little BNB for gas fees.
+              </p>
+            </div>
+            <button class="collapsible">Step 4: Buy Sanji Inu</button>
+            <div class="content">
+              <p>
+                Now you have BNB in your wallet you can buy Sanji Inu.&nbsp;<br />&zwj;<br />Before
+                you try to buy you must click the settings button and change the
+                slippage to 11%. This is because Sanji Inu comes with 9% sales
+                tax as mentioned in the tokenomics section. The transaction may
+                not work without this.<br />&zwj;<br />Here is a little more
+                info on how to use Pancake Swap.<br /><a
+                  href="https://docs.pancakeswap.finance/products/pancakeswap-exchange/trade-guide"
+                  >Pancake Swap guide<br />&zwj;<br /></a
+                >One you have bought Sanji Inu you will need to manually add the
+                token to your wallet so that you can see it in there.<br />&zwj;<br /><a
+                  href="https://community.trustwallet.com/t/how-to-add-a-custom-token/213"
+                  >Add token to Trust Wallet guide</a
+                ><br /><a
+                  href="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-view-see-your-tokens-custom-tokens-in-MetaMask"
+                  >Add token to Metamask guide<br />&zwj;<br /></a
+                >Great, now you have Sanji Inu in your wallet and you can hodl
+                it as we ascend on our space mission! Check out the Moon
+                Map&nbsp;and if you need help or have any more questions that
+                are not answered on this site then chat with us in our&nbsp;<a
+                  href="https://t.me/sanjiinucommunity"
+                  >Telegram group</a
+                >.
+              </p>
+            </div>
+          </div>
+          <iframe
+            class="flex-1"
+            width="auto"
+            height="310"
+            src="https://www.youtube.com/embed/KpF41eS3YZQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </div>
+    <div
+      class="h-96 bg-footer-banner bg-bottom bg-no-repeat bg-cover p-8 flex items-center"
+    >
+      <div class="px-4 max-w-screen-xl w-full mx-auto z-10">
+        <div class="font-bold text-2xl">JOIN THE <br />COMMUNITY</div>
+        <div class="max-w-xs">
+          Join our Telegram community and discover the journey to come.
+        </div>
+        <div class="my-4">
+          <a
+            href="https://t.me/sanjiinucommunity"
+            class="border-2 border-[#F6DB2A] p-2 rounded-md w-[140px] text-center btn-hover"
+            >Join our telegram</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="py-10 px-4 max-w-screen-xl mx-auto">
+      <div class="flex items-center">
+        <div class="flex-1 gap-3 flex items-center">
+          <img class="w-auto h-20" src="/assets/images/logo.png" alt="" />
+        </div>
+        <div class="flex-1 flex flex-col gap-4 ml-6">
+          <div>CONNECT WITH US</div>
+          <div class="flex gap-4">
+            <input
+              type="email"
+              class="bg-transparent border-b w-full"
+              placeholder="Email"
+            />
+            <button
+              class="border-2 border-[#F6DB2A] p-2 rounded-md w-[140px] text-center btn-hover"
+            >
+              Submit
+            </button>
+          </div>
+          <div class="flex gap-4">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 50 50"
+                class="border rounded-md p-1 text-white icon-hover"
+                fill="currentColor"
+              >
+                <path
+                  d="M15 14c6.065 0 11 4.935 11 11s-4.935 11-11 11S4 31.065 4 25 8.935 14 15 14M15 12C7.82 12 2 17.82 2 25s5.82 13 13 13 13-5.82 13-13S22.18 12 15 12L15 12zM35.5 15c2.124 0 4.5 4.277 4.5 10s-2.376 10-4.5 10S31 30.723 31 25 33.376 15 35.5 15M35.5 13c-3.59 0-6.5 5.373-6.5 12s2.91 12 6.5 12S42 31.627 42 25 39.09 13 35.5 13L35.5 13zM46.377 15.667h.005H46.377M45.5 18.577C45.78 20.158 46 22.327 46 25s-.22 4.842-.5 6.423C45.22 29.842 45 27.673 45 25S45.22 20.158 45.5 18.577M45.5 14c-1.381 0-2.5 4.925-2.5 11s1.119 11 2.5 11S48 31.075 48 25 46.881 14 45.5 14L45.5 14z"
+                ></path>
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 50 50"
+                class="border rounded-md p-1 text-white icon-hover"
+                fill="currentColor"
+              >
+                <path
+                  d="M 29 3 C 28.0625 3 27.164063 3.382813 26.5 4 C 25.835938 4.617188 25.363281 5.433594 25 6.40625 C 24.355469 8.140625 24.085938 10.394531 24.03125 13.03125 C 19.234375 13.179688 14.820313 14.421875 11.28125 16.46875 C 10.214844 15.46875 8.855469 14.96875 7.5 14.96875 C 6.089844 14.96875 4.675781 15.511719 3.59375 16.59375 C 1.425781 18.761719 1.425781 22.238281 3.59375 24.40625 L 3.84375 24.65625 C 3.3125 26.035156 3 27.488281 3 29 C 3 33.527344 5.566406 37.585938 9.5625 40.4375 C 13.558594 43.289063 19.007813 45 25 45 C 30.992188 45 36.441406 43.289063 40.4375 40.4375 C 44.433594 37.585938 47 33.527344 47 29 C 47 27.488281 46.6875 26.035156 46.15625 24.65625 L 46.40625 24.40625 C 48.574219 22.238281 48.574219 18.761719 46.40625 16.59375 C 45.324219 15.511719 43.910156 14.96875 42.5 14.96875 C 41.144531 14.96875 39.785156 15.46875 38.71875 16.46875 C 35.195313 14.433594 30.800781 13.191406 26.03125 13.03125 C 26.09375 10.546875 26.363281 8.46875 26.875 7.09375 C 27.164063 6.316406 27.527344 5.757813 27.875 5.4375 C 28.222656 5.117188 28.539063 5 29 5 C 29.460938 5 29.683594 5.125 30.03125 5.40625 C 30.378906 5.6875 30.785156 6.148438 31.3125 6.6875 C 32.253906 7.652344 33.695313 8.714844 36.09375 8.9375 C 36.539063 11.238281 38.574219 13 41 13 C 43.75 13 46 10.75 46 8 C 46 5.25 43.75 3 41 3 C 38.605469 3 36.574219 4.710938 36.09375 6.96875 C 34.3125 6.796875 33.527344 6.109375 32.75 5.3125 C 32.300781 4.851563 31.886719 4.3125 31.3125 3.84375 C 30.738281 3.375 29.9375 3 29 3 Z M 41 5 C 42.667969 5 44 6.332031 44 8 C 44 9.667969 42.667969 11 41 11 C 39.332031 11 38 9.667969 38 8 C 38 6.332031 39.332031 5 41 5 Z M 25 15 C 30.609375 15 35.675781 16.613281 39.28125 19.1875 C 42.886719 21.761719 45 25.226563 45 29 C 45 32.773438 42.886719 36.238281 39.28125 38.8125 C 35.675781 41.386719 30.609375 43 25 43 C 19.390625 43 14.324219 41.386719 10.71875 38.8125 C 7.113281 36.238281 5 32.773438 5 29 C 5 25.226563 7.113281 21.761719 10.71875 19.1875 C 14.324219 16.613281 19.390625 15 25 15 Z M 7.5 16.9375 C 8.203125 16.9375 8.914063 17.148438 9.53125 17.59375 C 7.527344 19.03125 5.886719 20.769531 4.75 22.71875 C 3.582031 21.296875 3.660156 19.339844 5 18 C 5.714844 17.285156 6.609375 16.9375 7.5 16.9375 Z M 42.5 16.9375 C 43.390625 16.9375 44.285156 17.285156 45 18 C 46.339844 19.339844 46.417969 21.296875 45.25 22.71875 C 44.113281 20.769531 42.472656 19.03125 40.46875 17.59375 C 41.085938 17.148438 41.796875 16.9375 42.5 16.9375 Z M 17 22 C 14.800781 22 13 23.800781 13 26 C 13 28.199219 14.800781 30 17 30 C 19.199219 30 21 28.199219 21 26 C 21 23.800781 19.199219 22 17 22 Z M 33 22 C 30.800781 22 29 23.800781 29 26 C 29 28.199219 30.800781 30 33 30 C 35.199219 30 37 28.199219 37 26 C 37 23.800781 35.199219 22 33 22 Z M 17 24 C 18.117188 24 19 24.882813 19 26 C 19 27.117188 18.117188 28 17 28 C 15.882813 28 15 27.117188 15 26 C 15 24.882813 15.882813 24 17 24 Z M 33 24 C 34.117188 24 35 24.882813 35 26 C 35 27.117188 34.117188 28 33 28 C 31.882813 28 31 27.117188 31 26 C 31 24.882813 31.882813 24 33 24 Z M 34.15625 33.84375 C 34.101563 33.851563 34.050781 33.859375 34 33.875 C 33.683594 33.9375 33.417969 34.144531 33.28125 34.4375 C 33.28125 34.4375 32.757813 35.164063 31.4375 36 C 30.117188 36.835938 28.058594 37.6875 25 37.6875 C 21.941406 37.6875 19.882813 36.835938 18.5625 36 C 17.242188 35.164063 16.71875 34.4375 16.71875 34.4375 C 16.492188 34.082031 16.066406 33.90625 15.65625 34 C 15.332031 34.082031 15.070313 34.316406 14.957031 34.632813 C 14.84375 34.945313 14.894531 35.292969 15.09375 35.5625 C 15.09375 35.5625 15.863281 36.671875 17.46875 37.6875 C 19.074219 38.703125 21.558594 39.6875 25 39.6875 C 28.441406 39.6875 30.925781 38.703125 32.53125 37.6875 C 34.136719 36.671875 34.90625 35.5625 34.90625 35.5625 C 35.207031 35.273438 35.296875 34.824219 35.128906 34.441406 C 34.960938 34.058594 34.574219 33.820313 34.15625 33.84375 Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/sanjiinu_tw/" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 50 50"
+                class="border rounded-md p-1 text-white icon-hover"
+                fill="currentColor"
+              >
+                <path
+                  d="M 34.21875 5.46875 C 28.238281 5.46875 23.375 10.332031 23.375 16.3125 C 23.375 16.671875 23.464844 17.023438 23.5 17.375 C 16.105469 16.667969 9.566406 13.105469 5.125 7.65625 C 4.917969 7.394531 4.597656 7.253906 4.261719 7.277344 C 3.929688 7.300781 3.632813 7.492188 3.46875 7.78125 C 2.535156 9.386719 2 11.234375 2 13.21875 C 2 15.621094 2.859375 17.820313 4.1875 19.625 C 3.929688 19.511719 3.648438 19.449219 3.40625 19.3125 C 3.097656 19.148438 2.726563 19.15625 2.425781 19.335938 C 2.125 19.515625 1.941406 19.839844 1.9375 20.1875 L 1.9375 20.3125 C 1.9375 23.996094 3.84375 27.195313 6.65625 29.15625 C 6.625 29.152344 6.59375 29.164063 6.5625 29.15625 C 6.21875 29.097656 5.871094 29.21875 5.640625 29.480469 C 5.410156 29.742188 5.335938 30.105469 5.4375 30.4375 C 6.554688 33.910156 9.40625 36.5625 12.9375 37.53125 C 10.125 39.203125 6.863281 40.1875 3.34375 40.1875 C 2.582031 40.1875 1.851563 40.148438 1.125 40.0625 C 0.65625 40 0.207031 40.273438 0.0507813 40.71875 C -0.109375 41.164063 0.0664063 41.660156 0.46875 41.90625 C 4.980469 44.800781 10.335938 46.5 16.09375 46.5 C 25.425781 46.5 32.746094 42.601563 37.65625 37.03125 C 42.566406 31.460938 45.125 24.226563 45.125 17.46875 C 45.125 17.183594 45.101563 16.90625 45.09375 16.625 C 46.925781 15.222656 48.5625 13.578125 49.84375 11.65625 C 50.097656 11.285156 50.070313 10.789063 49.777344 10.445313 C 49.488281 10.101563 49 9.996094 48.59375 10.1875 C 48.078125 10.417969 47.476563 10.441406 46.9375 10.625 C 47.648438 9.675781 48.257813 8.652344 48.625 7.5 C 48.75 7.105469 48.613281 6.671875 48.289063 6.414063 C 47.964844 6.160156 47.511719 6.128906 47.15625 6.34375 C 45.449219 7.355469 43.558594 8.066406 41.5625 8.5 C 39.625 6.6875 37.074219 5.46875 34.21875 5.46875 Z M 34.21875 7.46875 C 36.769531 7.46875 39.074219 8.558594 40.6875 10.28125 C 40.929688 10.53125 41.285156 10.636719 41.625 10.5625 C 42.929688 10.304688 44.167969 9.925781 45.375 9.4375 C 44.679688 10.375 43.820313 11.175781 42.8125 11.78125 C 42.355469 12.003906 42.140625 12.53125 42.308594 13.011719 C 42.472656 13.488281 42.972656 13.765625 43.46875 13.65625 C 44.46875 13.535156 45.359375 13.128906 46.3125 12.875 C 45.457031 13.800781 44.519531 14.636719 43.5 15.375 C 43.222656 15.578125 43.070313 15.90625 43.09375 16.25 C 43.109375 16.65625 43.125 17.058594 43.125 17.46875 C 43.125 23.71875 40.726563 30.503906 36.15625 35.6875 C 31.585938 40.871094 24.875 44.5 16.09375 44.5 C 12.105469 44.5 8.339844 43.617188 4.9375 42.0625 C 9.15625 41.738281 13.046875 40.246094 16.1875 37.78125 C 16.515625 37.519531 16.644531 37.082031 16.511719 36.683594 C 16.378906 36.285156 16.011719 36.011719 15.59375 36 C 12.296875 35.941406 9.535156 34.023438 8.0625 31.3125 C 8.117188 31.3125 8.164063 31.3125 8.21875 31.3125 C 9.207031 31.3125 10.183594 31.1875 11.09375 30.9375 C 11.53125 30.808594 11.832031 30.402344 11.816406 29.945313 C 11.800781 29.488281 11.476563 29.097656 11.03125 29 C 7.472656 28.28125 4.804688 25.382813 4.1875 21.78125 C 5.195313 22.128906 6.226563 22.402344 7.34375 22.4375 C 7.800781 22.464844 8.214844 22.179688 8.355469 21.746094 C 8.496094 21.3125 8.324219 20.835938 7.9375 20.59375 C 5.5625 19.003906 4 16.296875 4 13.21875 C 4 12.078125 4.296875 11.03125 4.6875 10.03125 C 9.6875 15.519531 16.6875 19.164063 24.59375 19.5625 C 24.90625 19.578125 25.210938 19.449219 25.414063 19.210938 C 25.617188 18.96875 25.695313 18.648438 25.625 18.34375 C 25.472656 17.695313 25.375 17.007813 25.375 16.3125 C 25.375 11.414063 29.320313 7.46875 34.21875 7.46875 Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://t.me/sanjiinucommunity" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 30 30"
+                class="border rounded-md p-1 text-white icon-hover"
+                fill="currentColor"
+              >
+                <path
+                  d="M 25.154297 3.984375 C 24.829241 3.998716 24.526384 4.0933979 24.259766 4.2011719 C 24.010014 4.3016357 23.055766 4.7109106 21.552734 5.3554688 C 20.048394 6.0005882 18.056479 6.855779 15.931641 7.7695312 C 11.681964 9.5970359 6.9042108 11.654169 4.4570312 12.707031 C 4.3650097 12.746607 4.0439208 12.849183 3.703125 13.115234 C 3.3623292 13.381286 3 13.932585 3 14.546875 C 3 15.042215 3.2360676 15.534319 3.5332031 15.828125 C 3.8303386 16.121931 4.144747 16.267067 4.4140625 16.376953 C 5.3912284 16.775666 8.4218473 18.015862 8.9941406 18.25 C 9.195546 18.866983 10.29249 22.222526 10.546875 23.044922 C 10.714568 23.587626 10.874198 23.927519 11.082031 24.197266 C 11.185948 24.332139 11.306743 24.45034 11.453125 24.542969 C 11.511635 24.579989 11.575789 24.608506 11.640625 24.634766 L 11.644531 24.636719 C 11.659471 24.642719 11.67235 24.652903 11.6875 24.658203 C 11.716082 24.668202 11.735202 24.669403 11.773438 24.677734 C 11.925762 24.726927 12.079549 24.757812 12.216797 24.757812 C 12.80196 24.757814 13.160156 24.435547 13.160156 24.435547 L 13.181641 24.419922 L 16.191406 21.816406 L 19.841797 25.269531 C 19.893193 25.342209 20.372542 26 21.429688 26 C 22.057386 26 22.555319 25.685026 22.875 25.349609 C 23.194681 25.014192 23.393848 24.661807 23.478516 24.21875 L 23.478516 24.216797 C 23.557706 23.798129 26.921875 6.5273437 26.921875 6.5273438 L 26.916016 6.5507812 C 27.014496 6.1012683 27.040303 5.6826405 26.931641 5.2695312 C 26.822973 4.8564222 26.536648 4.4608905 26.181641 4.2480469 C 25.826669 4.0352506 25.479353 3.9700339 25.154297 3.984375 z M 24.966797 6.0742188 C 24.961997 6.1034038 24.970391 6.0887279 24.962891 6.1230469 L 24.960938 6.1347656 L 24.958984 6.1464844 C 24.958984 6.1464844 21.636486 23.196371 21.513672 23.845703 C 21.522658 23.796665 21.481573 23.894167 21.439453 23.953125 C 21.379901 23.91208 21.257812 23.859375 21.257812 23.859375 L 21.238281 23.837891 L 16.251953 19.121094 L 12.726562 22.167969 L 13.775391 17.96875 C 13.775391 17.96875 20.331562 11.182109 20.726562 10.787109 C 21.044563 10.471109 21.111328 10.360953 21.111328 10.251953 C 21.111328 10.105953 21.035234 10 20.865234 10 C 20.712234 10 20.506484 10.14875 20.396484 10.21875 C 18.963383 11.132295 12.671823 14.799141 9.8515625 16.439453 C 9.4033769 16.256034 6.2896636 14.981472 5.234375 14.550781 C 5.242365 14.547281 5.2397349 14.548522 5.2480469 14.544922 C 7.6958673 13.491784 12.47163 11.434667 16.720703 9.6074219 C 18.84524 8.6937992 20.838669 7.8379587 22.341797 7.1933594 C 23.821781 6.5586849 24.850125 6.1218894 24.966797 6.0742188 z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/sanjiinu_ig/" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                class="border rounded-md p-1 text-white icon-hover"
+                fill="currentColor"
+              >
+                <path
+                  d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/sanji.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.6.8/keen-slider.min.js"></script>
+    <script>
+      var animation = { duration: 25000, easing: (t) => t };
+
+      var slider = new KeenSlider('#my-keen-slider', {
+        loop: true,
+        renderMode: 'performance',
+        drag: false,
+        slides: {
+          perView: 'auto',
+          spacing: 15,
+        },
+        created(s) {
+          s.moveToIdx(5, true, animation);
+        },
+        updated(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+        animationEnded(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+      });
+
+      var slider = new KeenSlider('#my-keen-slider2', {
+        loop: true,
+        renderMode: 'performance',
+        drag: false,
+        rtl: true,
+        slides: {
+          perView: 'auto',
+          spacing: 15,
+        },
+        created(s) {
+          s.moveToIdx(5, true, animation);
+        },
+        updated(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+        animationEnded(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation);
+        },
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        console.log('run');
+        const menu = document.getElementById('navbarOne');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('-right-[100vw]');
+        menu.classList.toggle('right-0');
+      }
+    </script>
+  </body>
 </html>
